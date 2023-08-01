@@ -1,0 +1,101 @@
+* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.city-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.city-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    min-width: 150px; /* Tamanho mínimo dos botões */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .city-button {
+        min-width: 120px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .city-button {
+        min-width: 100px;
+        font-size: 12px;
+    }
+}
+
+.city-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Informações da Cidade</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/city/Lisboa">Cidades</a></li>
+            <li><a href="/city/Lisboa">Pontos turistícos</a></li>
+            <li><a href="/city/Lisboa">Roteiros</a></li>
+
+            <!-- Adicione mais cidades aqui -->
+        </ul>
+    </nav>
+    <h1>Informações da cidade de {{ city }}</h1>
+    <p>Previsão do tempo para o dia de hoje: {{ weather_info }}</p>
+    <!-- Adicione informações sobre pontos turísticos aqui -->
+</body>
+</html>
